@@ -33,6 +33,7 @@ remote_theme: "mmistakes/minimal-mistakes@4.16.3"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-remote-theme
 
 include: ["_pages"]
 
