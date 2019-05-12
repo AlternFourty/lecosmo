@@ -13,15 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Proyecto Lecosmo
+email: alternfourty@gmail.com
+name: Fourty
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+Blog principal de prueba para mi aprendizaje del manejo de jekyll como
+plataforma para el manejo de mi contenido.
 baseurl: "lecosmo" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: altern40
+repository: "AlternFourty/lecosmo"
+twitter:
+  username: "altern40"
 github_username:  AlternFourty
 
 # Build settings
@@ -32,6 +34,55 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
+include: ["_pages"]
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+head_scripts:
+  - https://code.jquery.com/jquery-3.2.1.min.js
+  - /assets/js/your-custom-head-script.js
+
+teaser: /assets/images/bglp.jpg
+logo: "/assets/images/40logo.png"
+search: true
+author:
+  name     : "Ivan Morales"
+  avatar   : "/assets/images/40logo.png"
+  bio      : "Let me finish building this."
+  location : "Cartagena, Colombia"
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/altern40"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/AlternFourty"
+
+timezone: America/Bogota
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development  # disable compression in dev environment
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
