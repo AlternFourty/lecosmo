@@ -30,7 +30,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 markdown: kramdown
 # theme: minima
 remote_theme: "mmistakes/minimal-mistakes@4.16.3"
-minimal_mistakes_skin: "Air"
+minimal_mistakes_skin: "air"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
