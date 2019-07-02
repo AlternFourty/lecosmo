@@ -19,13 +19,11 @@ name: Fourty
 description: >- # this means to ignore newlines until "baseurl:"
   Blog principal de prueba para mi aprendizaje del manejo de jekyll como
   plataforma para el manejo de mi contenido
-baseurl: "lh" # the subpath of your site, e.g. /blog
+baseurl: "lighthouse" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-repository: "AlternFourty/lecosmo"
+repository: "AlternFourty/lighthouse"
 twitter:
   username: "altern40"
-baseurl: "lh" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 markdown: kramdown
 # theme: minima
